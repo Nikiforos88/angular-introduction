@@ -33,6 +33,8 @@
 <app-person-table [person]="person1"></app-person-table>
   ```
 
+  ```
+
 ## Βήμα 2: Δημιουργία νέου component
  
 - Δημιουργία ενός νέου component με την εντολή `ng generate component components/person-table`.
@@ -40,6 +42,7 @@
 - Μεταφορά του χαρακτηριστικού `person` από την κλάση `AppComponent` στην κλάση `PersonTableComponent`.
 - Συμπερίληψη της κλάσης `PersonTableComponent` στον πίνακα `imports` στην αρχικοποίηση του decorator στο αρχείο `app.component.ts`.
 - Χρήση του νέου component στο template του `app.component.html` με την ετικέτα `<app-person-table></app-person-table>`.
+
 
 ## Βήμα 1: Απλή δέσμευση χαρακτηριστικών (one way binding)
 
@@ -175,4 +178,3 @@
       }
     ]
   }
-  ```
