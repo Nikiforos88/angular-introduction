@@ -1,5 +1,17 @@
 # Εισαγωγή στο Angular Framework
 
+## Βήμα 4: @for Template Directive
+ 
+- Ορισμός χαρακτηριστικού `persons` τύπου `Person[]` στην κλάση `AppComponent` (πίνακας αντικειμένων τύπου `Person`)
+- Χρήση του template directive `@for(obj of objects); track obj` για την εμφάνιση των δεδομένων του πίνακα `persons` με τη χρήση του component `PersonTableComponent`
+ 
+
+  @for (user of users; track user) {
+<app-person-table [person]="user"></app-person-table>
+  }
+
+
+
 ## Βήμα 3: Component Input
  
 - Δημιουργία interface για τα δεδομένα τύπου `Person`
@@ -33,6 +45,8 @@
 <app-person-table [person]="person1"></app-person-table>
   ```
 
+  ```
+
 ## Βήμα 2: Δημιουργία νέου component
  
 - Δημιουργία ενός νέου component με την εντολή `ng generate component components/person-table`.
@@ -40,6 +54,7 @@
 - Μεταφορά του χαρακτηριστικού `person` από την κλάση `AppComponent` στην κλάση `PersonTableComponent`.
 - Συμπερίληψη της κλάσης `PersonTableComponent` στον πίνακα `imports` στην αρχικοποίηση του decorator στο αρχείο `app.component.ts`.
 - Χρήση του νέου component στο template του `app.component.html` με την ετικέτα `<app-person-table></app-person-table>`.
+
 
 ## Βήμα 1: Απλή δέσμευση χαρακτηριστικών (one way binding)
 
@@ -175,4 +190,3 @@
       }
     ]
   }
-  ```
